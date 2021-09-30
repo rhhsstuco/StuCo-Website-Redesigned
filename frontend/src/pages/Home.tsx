@@ -33,7 +33,6 @@ import {useToggleNavColour} from '../utils/hooks';
  */
 const Main: React.FC = () => {
   const countdownEvent = useContext<IInfoContext>(InfoContext).countdown[0];
-  const {} = useContext<ITransparentCtx>(TransparentCtx);
 
   if (!countdownEvent) {
     return <div />;
@@ -42,11 +41,7 @@ const Main: React.FC = () => {
   const style: SxStyleProp = {
     width: '100%',
     height: '100vh',
-    backgroundSize: 'cover',
-    backgroundImage:
-      `linear-gradient(rgba(${hexToRgbArr(theme.colors.navbar)}, 0.8),` +
-      `rgba(${hexToRgbArr(theme.colors.navbar)}, 0.4)),` +
-      `url("./assets/home-background.png") `,
+    backgroundColor: "#F3EACC",
     display: 'flex',
     flexDirection: 'column',
   };
@@ -59,13 +54,13 @@ const Main: React.FC = () => {
     mt: '1em',
     position: ['static', 'absolute'],
     // backgroundColor: ['transparent', theme.colors.background.accent],
-    color: theme.colors.text.light,
+    color: theme.colors.text.darkGray,
     textAlign: 'center',
     fontFamily: theme.fonts.heading,
     fontSize: [20, 30],
     '&:hover': {
       textDecoration: 'none',
-      color: theme.colors.text.light,
+      color: theme.colors.background.black,
       backgroundColor: theme.colors.background.overlay,
     },
     fontVariantCaps: 'titling-caps',
@@ -73,7 +68,7 @@ const Main: React.FC = () => {
     order: 1,
 
     //mobile
-    borderColor: theme.colors.background.light,
+    borderColor: theme.colors.background.black,
     borderWidth: [1, 2],
     borderStyle: 'solid',
   };
@@ -343,15 +338,14 @@ export const Home: React.FC = () => {
   const toggleNavUnsub = useToggleNavColour(window.innerHeight);
   console.log('mount');
   useEffect(() => {
-    setTransparent(true);
     return toggleNavUnsub;
   }, []);
 
   return (
     <div>
       <Main />
-      <UpcomingBoard />
-      <Recent />
+      {/* <UpcomingBoard />
+      <Recent /> */}
     </div>
   );
 };

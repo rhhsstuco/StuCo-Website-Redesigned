@@ -222,7 +222,7 @@ export const Gallery: React.FC = (): ReactElement => {
     width: '100%',
     maxWidth: '100%',
     minHeight: '100vh',
-    backgroundColor: theme.colors.background.light,
+    backgroundColor: theme.colors.beige,
   };
 
   const innerWrapperStyle: SxStyleProp = {

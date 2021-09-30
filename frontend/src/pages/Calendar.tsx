@@ -27,7 +27,7 @@ export const Calendar: React.FC<CalendarProps> = () => {
 
     width: '100%',
     minHeight: '100vh',
-    backgroundColor: theme.colors.background.dark,
+    backgroundColor: theme.colors.beige,
   };
   const innerWrapperStyle: SxStyleProp = {
     // the div that contains everything
@@ -85,7 +85,7 @@ export const Calendar: React.FC<CalendarProps> = () => {
             width="80%"
             height="600px"
           ></iframe>
-          <div
+          {/* <div
             sx={{
               mt: '5%',
               mx: 'auto',
@@ -103,7 +103,7 @@ export const Calendar: React.FC<CalendarProps> = () => {
           >
             A more lively calendar is under development! For now, though, enjoy
             this embedded one!
-          </p>
+          </p> */}
         </div>
       </div>
     </div>

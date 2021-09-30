@@ -74,7 +74,7 @@ export interface NavRoutes {
   gallery: string;
   media: string;
   faq: string;
-  about: string;
+  //about: string;
 }
 
 export const routes = {
@@ -86,7 +86,7 @@ export const routes = {
   gallery: 'Gallery',
   media: 'Media',
   faq: 'FAQ',
-  about: 'About Us',
+  //about: 'About Us',
 };
 
 export const Navigation: React.FC = () => {
@@ -131,7 +131,7 @@ export const Navigation: React.FC = () => {
         cursor: 'pointer',
         textDecoration: 'none',
         color: theme.colors.text.light,
-        backgroundColor: transparent ? 'transparent' : theme.colors.footer,
+        backgroundColor: "#709C74",
         outlineOffset: -outlineWidth,
         outlineWidth: transparent ? outlineWidth : 0,
         outlineColor: theme.colors.footer,
@@ -152,7 +152,7 @@ export const Navigation: React.FC = () => {
   };
 
   const transparentStyle: SxStyleProp = {
-    backgroundColor: [theme.colors.navbar+'CC', 'transparent'],
+    backgroundColor: [theme.colors.navbar],
     backdropFilter: ['blur(4px)', undefined],
   };
 

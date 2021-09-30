@@ -457,7 +457,7 @@ export const Events: React.FC = () => {
     width: '100%',
     maxWidth: '100%',
     minHeight: '100vh',
-    backgroundColor: theme.colors.background.light,
+    backgroundColor: theme.colors.beige,
   };
   const innerWrapperStyle: SxStyleProp = {
     // the div that contains everything

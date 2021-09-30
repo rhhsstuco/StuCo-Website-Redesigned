@@ -29,11 +29,10 @@ export const Media = ({}) => {
 
     width: '100%',
     minHeight: '100vh',
-    backgroundColor: theme.colors.background.light,
+    backgroundColor: theme.colors.beige,
   };
   const innerWrapperStyle: SxStyleProp = {
     // the div that contains everything
-
     top: '20vh',
     position: 'relative',
     width: '100%',

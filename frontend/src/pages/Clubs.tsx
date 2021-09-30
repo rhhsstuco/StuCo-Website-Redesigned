@@ -296,7 +296,7 @@ export const Clubs: React.FC = () => {
 
   const wrapperStyle: SxStyleProp = {
     minHeight: '100vh',
-    backgroundColor: theme.colors.background.light,
+    backgroundColor: theme.colors.beige,
     display: 'flex',
     flexWrap: 'wrap',
     ...theme.bodyPadding,

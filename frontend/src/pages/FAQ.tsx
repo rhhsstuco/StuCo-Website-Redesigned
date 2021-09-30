@@ -75,7 +75,7 @@ const QuestionItem: React.FC<QuestionProp> = ({
   const titleTextStyle: SxStyleProp = {
     fontSize: theme.fontSizes.body,
     fontFamily: theme.fonts.heading,
-    color: theme.colors.text.light,
+    color: theme.colors.text.darkGray,
     wordWrap: 'normal',
     textAlign: 'center',
     margin: 'auto',
@@ -329,7 +329,7 @@ export const FAQ: React.FC = (): ReactElement => {
 
     width: '100%',
     minHeight: '100vh',
-    backgroundColor: theme.colors.background.light,
+    backgroundColor: theme.colors.beige,
   };
   const innerWrapperStyle: SxStyleProp = {
     // the div that contains everything
