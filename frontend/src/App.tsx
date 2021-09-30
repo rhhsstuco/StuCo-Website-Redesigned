@@ -111,9 +111,9 @@ const Main: React.FC = React.memo(() => {
           <Route path="/media">
             <Media />
           </Route>
-          <Route path="/faq">
+          {/* <Route path="/faq">
             <FAQ />
-          </Route>
+          </Route> */}
           {/* <Route path="/about">
             <AboutUs />
           </Route> */}

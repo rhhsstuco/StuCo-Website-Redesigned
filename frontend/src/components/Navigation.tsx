@@ -73,7 +73,7 @@ export interface NavRoutes {
   map: string;
   gallery: string;
   media: string;
-  faq: string;
+  // faq: string;
   //about: string;
 }
 
@@ -85,8 +85,8 @@ export const routes = {
   map: 'Map',
   gallery: 'Gallery',
   media: 'Media',
-  faq: 'FAQ',
-  //about: 'About Us',
+  // faq: 'FAQ',
+  // about: 'About Us',
 };
 
 export const Navigation: React.FC = () => {
