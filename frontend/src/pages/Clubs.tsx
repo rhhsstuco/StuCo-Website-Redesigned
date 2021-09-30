@@ -276,7 +276,7 @@ export const Clubs: React.FC = () => {
       zIndex: 0,
     };
 
-    return <div sx={wrapper}>{triangles}</div>;
+    //return <div sx={wrapper}>{triangles}</div>;
   };
 
   const renderClubPopup = () => {

@@ -43,7 +43,7 @@ const Main: React.FC = () => {
     height: '100vh',
     backgroundColor: "#F3EACC",
     display: 'flex',
-    flexDirection: 'column',
+    flexDirection: 'column', 
   };
 
   const buttonStyle: SxStyleProp = {

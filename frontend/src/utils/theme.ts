@@ -59,7 +59,7 @@ export const theme = {
     },
   },
   fonts: {
-    heading: 'Open Sans',
+    heading: 'Rowdies',
     body: 'Open Sans',
   },
   fontSizes: {
