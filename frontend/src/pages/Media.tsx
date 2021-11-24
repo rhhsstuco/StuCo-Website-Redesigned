@@ -38,6 +38,7 @@ export const Media = ({}) => {
     width: '100%',
     display: 'flex',
     flexDirection: 'column',
+    backgroundColor: theme.colors.beige,
     mb: '6em', // push away footer
   };
   const headerWrapperStyle: SxStyleProp = {

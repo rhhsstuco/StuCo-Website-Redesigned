@@ -73,9 +73,22 @@ const Main: React.FC = () => {
     borderStyle: 'solid',
   };
 
+  const bigLogo: SxStyleProp = {
+    width: 'fit-content',
+    mx: 'auto',
+    my: 'auto',
+    pl: '50%',
+    display: 'flex'
+  }
+
   return (
     <div sx={style}>
       <CountDownTimer date={new Date(countdownEvent.date)} />
+      <img
+        src='logo.png'
+        alt="rhhs logo"
+        sx={bigLogo}
+      />
       <Link to="events" sx={buttonStyle}>
         <div sx={{my: 2}}>{countdownEvent.eventName.toUpperCase()}</div>
       </Link>

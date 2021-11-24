@@ -9,9 +9,12 @@ import {theme} from '../utils/theme';
 import { ISetTransparentCtx, SetTransparentCtx } from '../utils/contexts';
 import { useToggleNavColour } from '../utils/hooks';
 
+// import { Calendar } from '@fullcalendar/core';
+// import googleCalendarPlugin from '@fullcalendar/google-calendar';
+
 export interface CalendarProps {}
 
-export const Calendar: React.FC<CalendarProps> = () => {
+export const CCalendar: React.FC<CalendarProps> = () => {
   const [spinAmount, setSpinAmount] = useState(1);
   
   const {setTransparent} = useContext<ISetTransparentCtx>(SetTransparentCtx);
@@ -51,6 +54,7 @@ export const Calendar: React.FC<CalendarProps> = () => {
       setSpinAmount(spinAmount + 1);
     }
   };
+
 
   const renderSpannerImage = () => {
     return (

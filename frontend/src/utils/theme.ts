@@ -59,8 +59,8 @@ export const theme = {
     },
   },
   fonts: {
-    heading: 'Rowdies',
-    body: 'Open Sans',
+    heading: 'Open Sans: a9',
+    body: 'Open Sans: a9',
   },
   fontSizes: {
     heading: {

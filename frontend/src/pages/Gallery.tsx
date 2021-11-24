@@ -230,7 +230,6 @@ export const Gallery: React.FC = (): ReactElement => {
     width: '100%',
     maxWidth: '100%',
     px: '5%',
-    mb: '14em', // pushing away the footer
     display: 'flex',
     flexDirection: 'column',
   };

@@ -403,7 +403,7 @@ export const Clubs: React.FC = () => {
       {getTransluteRects()}
 
       <Heading
-        text="2019-2020 Clubs"
+        text="2021-2022 Clubs"
         alignment={isFirstBreakpoint ? 'left' : 'center'}
         underline={false}
         extraStyling={headingStyle}

@@ -14,7 +14,7 @@ import {useUnmountingDelay} from './utils/hooks';
 import {Home} from './pages/Home';
 import {Events} from './pages/Events';
 import {Clubs} from './pages/Clubs';
-import {Calendar} from './pages/Calendar';
+import {CCalendar} from './pages/Calendar';
 import {Map} from './pages/Map';
 import {Gallery} from './pages/Gallery';
 import {Media} from './pages/Media';
@@ -31,8 +31,8 @@ import {
 } from './utils/contexts';
 import { theme } from './utils/theme';
 
-// const backendUrl = 'http://localhost:8080';
-const backendUrl = 'https://us-central1-newstuco.cloudfunctions.net/test';
+const backendUrl = 'http://localhost:8080';
+//const backendUrl = 'https://us-central1-newstuco.cloudfunctions.net/test';
 // console.log(backendUrl);
 
 const Main: React.FC = React.memo(() => {
@@ -99,7 +99,7 @@ const Main: React.FC = React.memo(() => {
             <Clubs />
           </Route>
           <Route path="/calendar">
-            <Calendar />
+            <CCalendar />
           </Route>
           <Route path="/map">
             <Map />
