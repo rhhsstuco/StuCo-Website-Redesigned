@@ -31,9 +31,8 @@ import {
 } from './utils/contexts';
 import { theme } from './utils/theme';
 
-const backendUrl = 'http://localhost:8080';
-//const backendUrl = 'https://us-central1-newstuco.cloudfunctions.net/test';
-// console.log(backendUrl);
+//const backendUrl = 'http://localhost:8080';
+const backendUrl = 'https://us-central1-newstuco.cloudfunctions.net/test';
 
 const Main: React.FC = React.memo(() => {
   const [info, setInfo] = useState<IInfoContext | undefined>();
