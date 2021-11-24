@@ -43,7 +43,6 @@ const Main: React.FC = React.memo(() => {
 
   const getData = async () => {
     let data: IInfoContext;
-
     try {
       const res = await fetch(backendUrl, {
         method: 'GET',

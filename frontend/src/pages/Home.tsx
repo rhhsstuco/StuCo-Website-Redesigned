@@ -84,11 +84,11 @@ const Main: React.FC = () => {
   return (
     <div sx={style}>
       <CountDownTimer date={new Date(countdownEvent.date)} />
-      <img
+      {/* <img
         src='logo.png'
         alt="rhhs logo"
         sx={bigLogo}
-      />
+      /> */}
       <Link to="events" sx={buttonStyle}>
         <div sx={{my: 2}}>{countdownEvent.eventName.toUpperCase()}</div>
       </Link>
