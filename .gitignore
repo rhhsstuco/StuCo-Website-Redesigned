@@ -5,7 +5,6 @@ package-lock.json
 react-app-env.d.ts
 .prettierrc.js
 
-
 # vscode configeration
 .vscode/
 
@@ -14,3 +13,5 @@ service-key.json
 
 # why store logs when you can just ignore them
 *.log
+
+.DS_store
