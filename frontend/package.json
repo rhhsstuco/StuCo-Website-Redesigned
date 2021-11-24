@@ -36,7 +36,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build && echo \"www.rhhsstuco.ca\" > build/CNAME",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "fulldeploy": "npm run predeploy && npm run deploy"
   },
   "eslintConfig": {
     "extends": "react-app"

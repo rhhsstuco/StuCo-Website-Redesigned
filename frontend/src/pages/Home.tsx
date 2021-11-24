@@ -78,7 +78,7 @@ const Main: React.FC = () => {
     mx: 'auto',
     my: 'auto',
     pl: '50%',
-    display: 'flex'
+    display: 'inline-block'
   }
 
   return (
