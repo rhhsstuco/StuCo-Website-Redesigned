@@ -53,6 +53,7 @@ const Main: React.FC = () => {
     mx: 'auto',
     mt: '1em',
     position: ['static', 'absolute'],
+    display: 'inline-block',
     // backgroundColor: ['transparent', theme.colors.background.accent],
     color: theme.colors.text.darkGray,
     textAlign: 'center',
@@ -72,29 +73,28 @@ const Main: React.FC = () => {
     borderWidth: [1, 2],
     borderStyle: 'solid',
   };
-
   const bigLogo: SxStyleProp = {
-    width: 'fit-content',
+    height: '700px',
+    width: '60%',
     mx: 'auto',
     my: 'auto',
-    pl: '50%',
-    display: 'inline-block'
+    opacity: 0.1,
+    display: ['inline-block'],
   }
 
   return (
     <div sx={style}>
       <CountDownTimer date={new Date(countdownEvent.date)} />
+      <Link to="events" sx={buttonStyle}>
+        <div sx={{my: 2}}>{countdownEvent.eventName.toUpperCase()}</div>
+      </Link>
       {/* <img
         src='logo.png'
         alt="rhhs logo"
         sx={bigLogo}
       /> */}
-      <Link to="events" sx={buttonStyle}>
-        <div sx={{my: 2}}>{countdownEvent.eventName.toUpperCase()}</div>
-      </Link>
     </div>
-  );
-};
+  )};
 
 //=============================================================
 

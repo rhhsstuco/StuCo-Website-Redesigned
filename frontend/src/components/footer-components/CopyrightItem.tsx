@@ -24,7 +24,7 @@ export const CopyrightItem: React.FC<CopyrightItemProps> = ({textStyle}) => {
     mb: '0.25em',
 
     '&:hover': {
-      color: theme.colors.primary,
+      // color: theme.colors.primary,
       textDecoration: 'none',
     },
   };

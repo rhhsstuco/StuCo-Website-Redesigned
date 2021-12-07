@@ -93,7 +93,7 @@ export const FooterRoutes: React.FC<FooterRoutesProps> = ({
 
       display: 'inline',
       '&:hover': {
-        color: theme.colors.primary,
+        // color: theme.colors.primary,
         textDecoration: 'none',
       },
     };

@@ -106,7 +106,7 @@ export const Resources: React.FC<ResourcesProps> = ({textStyling}) => {
 
       display: 'inline',
       '&:hover': {
-        color: theme.colors.primary,
+        // color: theme.colors.primary,
         textDecoration: 'none',
       },
     };
